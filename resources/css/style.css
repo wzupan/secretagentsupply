@@ -26,7 +26,8 @@ h1, h4 {
 }
 .company img {
   height: 1.5rem;
-  padding-right: 15px;
+  padding-left: .5rem;
+  padding-right: 1rem;
 }
 img {
   border-style: none;
@@ -71,6 +72,9 @@ nav ul {
   padding: 0.75em 0;
   list-style: none;
 }
+.mobile-nav {
+  display: none;
+}
 .products, .business-info {
   display: flex;
   justify-content: space-between;
@@ -114,4 +118,22 @@ footer {
   color: white;
   margin-top: 4em;
   padding: 5em 0px;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  .product {
+    width: 47%;
+  }
+  .product.glasses {
+    display: none;
+  }
 }
