@@ -1,9 +1,18 @@
 html {
   font-size: 18px;
+  background-color: white;
+}
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  text-size-adjust: 100%;
 }
 body {
   font-family: Helvetica, sans-serif;
   line-height: 1.4em;
+}
+body {
+  margin: 0px;
 }
 div {
   display: block;
@@ -14,15 +23,17 @@ h1, h4 {
 .company {
   background-color: black;
   color: white;
-  padding: .66rem 0;
 }
 .company img {
-  padding: 0 1rem 0 .5rem;
   height: 1.5rem;
+  padding-right: 15px;
+}
+img {
+  border-style: none;
 }
 .container {
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .company .container {
   display: flex;
@@ -30,11 +41,11 @@ h1, h4 {
   padding: 12px 0 12px .5em;
 }
 .main-banner {
+  height: 25em;
   background: url(../photos/moto.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 25em;
 }
 .headline {
   background-color: black;
@@ -60,6 +71,47 @@ nav ul {
   padding: 0.75em 0;
   list-style: none;
 }
-li {
-  display: list-item;
-  text-align
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0px 0px;
+}
+.product {
+  width: 30%;
+}
+.product-image {
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black
+  border-image: initial;
+  padding: 2em 0px;
+}
+.product-image img {
+  max-width: 8em;
+}
+.description {
+  display: block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+.info {
+  width: 35%;
+}
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 4em;
+  padding: 5em 0px;
+}
